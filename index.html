@@ -13,19 +13,20 @@ body {
 
 /* Create two equal columns that floats next to each other */
 .column {
-    float: left;
+    float: right;
     width: 50%;
     padding: 50px;
     height: 800px; /* Should be removed. Only for demonstration */
-  
-   
+     display: table-cell;
+    vertical-align: middle;
+
 
 }
 
 /* Clear floats after the columns */
 .row:after {
     content: "";
-    display: table;
+    display: table-cell;
     clear: both;
 }
 
@@ -37,11 +38,13 @@ p.b {
     font-style: normal;
    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
    font-size: 18px;
+      
    
 }
 h2.b {
     font-style: normal;
     font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    
 }
 p.c {
     font-style: oblique;
@@ -54,14 +57,14 @@ p.c {
 
 
 <div class="row">
-  <div class="column" style="background-color:#F8E6E0;" align="right" >
-    <h2 class="b"> Melike Sezen Özdemir </h2>
-  <p class="b">PhD Student  <br> Delft University of Technology  <br> Embedded Software Group</p>
-  <p class="b"><b>Research Area:</b><br>  Wireless Communication Design for Batteryless IoT Networks</p>
+  <div class="column" style="background-color:#1f1f14;" align="right" >
+    <h2 class="b"> <font color="white">Melike Sezen Özdemir</font></h2>
+  <p class="b"><font color="white">PhD Student  <br> Delft University of Technology  <br> Embedded Software Group</font></p>
+  <p class="b"><font color="white"><b>Research Area:</b><br>  Wireless Communication Design<br> for Batteryless IoT Networks</font></p>
   </div>
-  <div class="column" style="background-color:#000000;">
-    <h2>Column 2</h2>
-    <p>Some text..</p>
+  <div class="column" style="background-color:#F8E6E0;">
+    <h2></h2>
+    <img src="me.png" alt="">
   </div>
 </div>
 
