@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
@@ -10,32 +8,42 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
 
-/* Style the header */
-.header {
-    padding: 160px;
-    text-align: center;
-    background-image:url(../bbck.png);
-
-   background-repeat:no-repeat;
-
-   background-size:cover;
-    color: white;
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 50px;
+    height: 400px; /* Should be removed. Only for demonstration */
 }
 
-/* Increase the font size of the h1 element */
-.header h1 {
-    font-size: 40px;
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
+</style>
+</head>
+<body>
 
-/* Style the top navigation bar */
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-}
+
+<div class="row">
+  <div class="column" style="background-color:#F8E6E0;" align="right">
+    <h2>Melike Sezen Özdemir</h2>
+    <p>PhD Student  <br> Delft University of Technology  <br> Embedded Software Group</p>
+  </div>
+  <div class="column" style="background-color:#000000;">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+
+</body>
+</html>
+
 
 /* Style the navigation bar links */
 .navbar a {
@@ -60,13 +68,6 @@ body {
 </style>
 </head>
 <body>
-
-<div class="header">
-  <h1>Melike Sezen Özdemir</h1>
-  <p>PhD Student 
-      Embedded Software Group
-      TU Delft</p>
-</div>
 
 <div class="navbar">
   <a href="#">Link</a>
