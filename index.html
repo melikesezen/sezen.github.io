@@ -1,26 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-     <title>Melike Sezen Özdemir</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
     box-sizing: border-box;
 }
 
+/* Add a gray background color with some padding */
 body {
-    margin: 0;
+    font-family: Arial;
+    padding: 20px;
+    background: #1f1f14;
 }
 
-/* Create two equal columns that floats next to each other */
-.column {
-    float: right;
-    width: 50%;
- padding:160px 40px 40px;
-    height:100vh; /* Should be removed. Only for demonstration */
-     vertical-align: middle;
+/* Header/Blog Title */
+.header {
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    background: #F8E6E0;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 100%;
+}
 
 
+
+/* Fake image */
+.fakeimg {
+    background-color: #F8E6E0;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Add a card effect for articles */
+.card {
+     background-color:#1f1f14;
+     padding: 50px;
+     margin-top: 20px;
+     font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 }
 
 /* Clear floats after the columns */
@@ -30,51 +54,39 @@ body {
     clear: both;
 }
 
-p.a {
-    font-style: normal;
-}
-
-p.b {
-    font-style: normal;
-   font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-   font-size: 18px;
-      
-   
-}
-h2.b {
-    font-style: normal;
-    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-    
-}
-p.c {
-    font-style: oblique;
-}
-
-img {
-    position:absolute;
-    top:0;
-    bottom:0;
-    margin:auto;
-}
 .image {
-    min-height:50px
+    min-height:30px
 }
+
+/* Footer */
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+
 </style>
 </head>
 <body>
 
 
 <div class="row">
-  <div class="column" style="background-color:#1f1f14;" align="right" >
-    <h2 class="b"> <font color=#F8E6E0> <br> <br> <br> <br>Melike Sezen Özdemir</font></h2>
+  <div class="leftcolumn">
+    <div class="card">
+           
+      <div class="fakeimg" style="height:200px;" style="width:250px;"><img src="me.png" alt="sezen" align="bottom"></div>
+      <h2 class="b"> <font color=#F8E6E0>  Melike Sezen Özdemir</font></h2>
   <p class="b"><font color=#F8E6E0>PhD Student  <br> Delft University of Technology  <br> Embedded Software Group</font></p>
   <p class="b"><font color=#F8E6E0><b>Research Area:</b><br>  Wireless Communication Design<br> for Batteryless IoT Networks</font></p>
+     
+    </div>
+   
   </div>
-  <div class="column" style="background-color:#F8E6E0;">
-      <h2 class="b"> <font color="white"> <br> <br> <br> <br> <br> <br>. </font></h2>
-      <img src="me.png" alt="sezen" align="bottom">
+     <div class="card">
+ <h3>    <font color=#F8E6E0> Contact</font></h3>
+      <p><font color=#F8E6E0> Contact</font>.</p>
+    </div>
   </div>
 </div>
+
 
 </body>
 </html>
