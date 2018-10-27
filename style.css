@@ -16,8 +16,11 @@ body {
 }
 
 ul, p {
+       
+ul, li { padding: 0px 5px; }
     font-size: 20px;
 }
+
 
 p.small {
     font-size: 16px;
@@ -38,8 +41,6 @@ h3,
 h4,
 h5,
 h6 {
-   
-ul, li { padding: 0px 5px; }
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
