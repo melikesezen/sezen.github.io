@@ -1,1 +1,1 @@
-# sezenozdemir.github.io
+# sezen.github.io
